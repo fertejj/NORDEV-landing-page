@@ -139,6 +139,9 @@ nav {
     position: relative;
     z-index: 2;
 }
+.hero h1 {
+   padding-bottom: .8rem ; 
+}
 
 .hero-badge {
     display: inline-block;
