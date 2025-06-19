@@ -5,24 +5,24 @@ const ServiceCard = ({ title, description }) => (
   <div className="card">
     <h3 className="card-title text-primary">{title}</h3>
     <p className="card-text">{description}</p>
-    <a href="#" className="card-link">Learn More &rarr;</a>
+    <a href="#" className="card-link">Conocer Más &rarr;</a>
   </div>
 );
 
 const Services = () => {
   const servicesData = [
-    { title: "Web Development", description: "Crafting responsive, high-performance websites and web applications tailored to your business needs." },
-    { title: "Automation", description: "Streamlining your business processes with custom automation solutions to boost efficiency and reduce costs." },
-    { title: "Custom Software", description: "Building scalable and secure software from the ground up to solve your unique challenges." },
-    { title: "Integrations", description: "Connecting your disparate systems and applications to create a seamless, unified workflow." }
+    { title: "Desarrollo Web", description: "Creamos sitios y aplicaciones web responsivas y de alto rendimiento adaptadas a las necesidades de tu negocio." },
+    { title: "Automatización", description: "Optimizamos los procesos de tu negocio con soluciones de automatización personalizadas para aumentar la eficiencia y reducir costos." },
+    { title: "Software a Medida", description: "Construimos software escalable y seguro desde cero para resolver tus desafíos únicos." },
+    { title: "Integraciones", description: "Conectamos tus sistemas y aplicaciones dispares para crear un flujo de trabajo unificado y sin interrupciones." }
   ];
 
   return (
     <section id="services" className="section-padding bg-surface">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="section-title">Our Services</h2>
-          <p className="section-subtitle">What we can do for you.</p>
+          <h2 className="section-title">Nuestros Servicios</h2>
+          <p className="section-subtitle">Lo que podemos hacer por ti.</p>
         </div>
         <div className="grid-4-col">
           {servicesData.map((service, index) => (

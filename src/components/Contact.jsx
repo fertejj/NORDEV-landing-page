@@ -3,28 +3,28 @@ import React from 'react';
 const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert('Form submitted! (This is a demo)');
+    alert('¡Formulario enviado! (Esto es una demostración)');
   };
 
   return (
     <section id="contact" className="section-padding">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="section-title">Get In Touch</h2>
-          <p className="section-subtitle">Have a project in mind? Let's talk.</p>
+          <h2 className="section-title">Ponte en Contacto</h2>
+          <p className="section-subtitle">¿Tienes un proyecto en mente? Hablemos.</p>
         </div>
         <div className="contact-form-container">
           <form onSubmit={handleSubmit} className="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" className="btn btn-primary">Send Message</button>
+            <input type="text" placeholder="Tu Nombre" required />
+            <input type="email" placeholder="Tu Email" required />
+            <textarea rows="5" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit" className="btn btn-primary">Enviar Mensaje</button>
           </form>
           <div className="contact-links">
-            <p>Or contact us via:</p>
-            <a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <p>O contáctanos a través de:</p>
+            <a href="https://wa.me/tunumeroaqui" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <span>|</span>
-            <a href="#">Schedule a Call</a>
+            <a href="#">Agendar una Llamada</a>
           </div>
         </div>
       </div>

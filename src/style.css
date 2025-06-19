@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit; /* Hereda las propiedades de fuente del padre */
+}
+
 /* --- CSS Variables --- */
 :root {
     --font-sans: 'Poppins', sans-serif;
@@ -16,7 +25,7 @@
     --primary-darker: #c44a1d;
 
     /* Secondary Colors */
-    --secondary-light: #87CEFA;
+    --secondary-light: #2d7fb3;
     --secondary-dark: #778899;
 }
 
@@ -168,7 +177,24 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid rgba(226, 232, 240, 0.8);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     overflow: hidden;
+
+    /* ====== ANIMACIÓN AÑADIDA ====== */
+    /* Estado inicial (CERRADO) */
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.35s ease-out, opacity 0.3s ease-out, visibility 0.35s;
 }
+
+/* Estado final (ABIERTO) al agregar la clase 'is-open' desde React */
+.mobile-menu.is-open {
+    max-height: 50vh; /* Un valor suficientemente grande */
+    opacity: 1;
+    visibility: visible;
+    transition: max-height 0.35s ease-in, opacity 0.3s ease-in;
+}
+/* ====== FIN DE LA ANIMACIÓN ====== */
+
 
 .dark .mobile-menu {
     background-color: rgba(42, 46, 55, 0.8);
@@ -354,7 +380,7 @@ body::-webkit-scrollbar-thumb {
 
 .testimonial-icon {
     width: 3rem;
-    height: 3rem;
+    height: 3.5rem;
     margin: 0 auto 1rem;
     color: var(--secondary-light);
 }
@@ -574,4 +600,4 @@ body::-webkit-scrollbar-thumb {
     .grid-4-col {
         grid-template-columns: repeat(4, 1fr);
     }
-}
+} 
