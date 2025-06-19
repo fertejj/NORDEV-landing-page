@@ -601,3 +601,7 @@ body::-webkit-scrollbar-thumb {
         grid-template-columns: repeat(4, 1fr);
     }
 } 
+
+textarea{
+    resize: none
+}
