@@ -1,6 +1,9 @@
-import React from "react";
+// src/components/About.jsx
 
-const About = () => {
+import React from "react";
+import heroImage from "/heroimg.webp";
+
+function About() {
   return (
     <section id="about" className="section-padding">
       <div className="container grid-2-col">
@@ -16,12 +19,16 @@ const About = () => {
             clientes.
           </p>
         </div>
-        <div className="placeholder-image">
-          <p></p>
-        </div>
+        <div
+          className="hero-image"
+          style={{
+            backgroundImage: `url(${heroImage})`,
+            backgroundPosition: "center 10%",
+          }}
+        ></div>
       </div>
     </section>
   );
-};
+}
 
 export default About;
