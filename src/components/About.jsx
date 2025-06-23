@@ -1,5 +1,3 @@
-// src/components/About.jsx
-
 import React from "react";
 import heroImage from "/heroimg.webp";
 
